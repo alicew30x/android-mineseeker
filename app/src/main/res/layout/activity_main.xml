@@ -42,4 +42,41 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp" />
+
+    <TextView
+        android:text="@string/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leftBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:id="@+id/question" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/question_side" />
+
+    <Button
+        android:text="@string/answer_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answerRight"
+        android:layout_alignBaseline="@+id/answerLeft"
+        android:layout_alignBottom="@+id/answerLeft"
+        android:layout_alignRight="@+id/rightBtn"
+        android:layout_alignEnd="@+id/rightBtn" />
+
+    <Button
+        android:text="@string/answer_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/answerLeft"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/leftBtn"
+        android:layout_alignStart="@+id/leftBtn" />
+
 </RelativeLayout>

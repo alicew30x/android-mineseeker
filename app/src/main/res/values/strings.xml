@@ -3,4 +3,9 @@
     <string name="show_leftName">Show left name</string>
     <string name="show_rightName">Show right name</string>
     <string name="main_title">How to navigate a ship</string>
+    <string name="question">Which side of the ship is the following?</string>
+    <string name="question_port">Port</string>
+    <string name="question_starboard">Starboard</string>
+    <string name="answer_left">Means left</string>
+    <string name="answer_right">Means right</string>
 </resources>
