@@ -20,22 +20,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //instantiate buttons
         leftButton = (Button) findViewById(R.id.leftBtn);
         rightButton = (Button) findViewById(R.id.rightBtn);
         leftAnswerBtn = (Button) findViewById(R.id.answerLeft);
         rightAnswerBtn = (Button) findViewById(R.id.answerRight);
 
+        //instantiate textview to display side picked
+        side = (TextView) findViewById(R.id.question_side);
+
+        //set button listeners
         leftButton.setOnClickListener(this);
         rightButton.setOnClickListener(this);
         leftAnswerBtn.setOnClickListener(this);
         rightAnswerBtn.setOnClickListener(this);
 
-        side = (TextView) findViewById(R.id.question_side);
-
+        //pick a side
         gameSide = new Game();
         setSide();
     }
 
+    //set textview to corresponding side
     public void setSide() {
         if(gameSide.getChosenSideName() == "Port") {
             side.setText(getString(R.string.question_port));
